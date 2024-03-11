@@ -1,3 +1,5 @@
-// #sum of two no.
-// input=-10,30.3;
-console.log("hello world");
+// #1 Write a function that takes two parameters, a and b, and returns their sum.
+function sum(a,b){
+   return a+b;
+}
+console.log(sum(10,20));
