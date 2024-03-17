@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  
+    .container{
+        border: 2px ; 
+    }
+    .header{
+        text-align: center;
+    }
+    .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+</style>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header">Todo-list</h1>
+            <div>
+                <input id="input-box" class="form-control mb-2  " type="text" placeholder="Please enter the task">
+                <button class="form-control btn btn-warning mb-3" onclick="addTask()">add</button>
+            </div>
+            
+            <ul id="list-container">
+
+            </ul>
+            
+        </div>
+    </div>
+</body>
+<script src="./todo.js"></script>
+
+</html>
