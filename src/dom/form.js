@@ -3,7 +3,7 @@ const div=document.querySelector('#form-div');
 const form=document.createElement('form');
 const nameInput=document.createElement('input');
 const emailInput=document.createElement('input');
-const br = document.createElement('br');
+const submitButton=document.createElement('button')
 const nameLabel = document.createElement('label');
 const emailLabel = document.createElement('label');
 
@@ -13,13 +13,26 @@ nameInput.type='text';
 emailLabel.textContent = 'Email:';
 emailInput.type='email'
 
+submitButton.type='submit';
+submitButton.textContent='Submit'
+submitButton.className='btn'
+
+
 div.appendChild(form)
 form.appendChild(nameLabel);
 form.appendChild(nameInput);
-form.appendChild(br); 
-form.appendChild(br); 
+form.appendChild(document.createElement('br')); 
+form.appendChild(document.createElement('br')); 
 form.appendChild(emailLabel);
-form.appendChild(emailInput)
+form.appendChild(emailInput);
+form.appendChild(document.createElement('br')); 
+form.appendChild(document.createElement('br')); 
+
+form.appendChild(submitButton)
+
+
+
+
 
 
 
