@@ -27,6 +27,7 @@ function addTask() {
 
 
     }
+    inputBox.value = '';
 }
 
 listContainer.addEventListener("click",function(e){
@@ -34,7 +35,10 @@ if(e.target.textContent==='Delete'){
     e.target.parentElement.parentElement.remove()
 }
 else if (e.target.textContent === 'Edit') {
-    
+    let taskText = e.target.parentElement.previousSibling;
+        let currentText = taskText.textContent;
+        inputBox.value = currentText;
+        
 }
 })
 
